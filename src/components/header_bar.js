@@ -16,14 +16,6 @@ const Logo = styled.img`
   top: 2%;
 `;
 
-const MailBox = styled.img`
-  float: left;
-  position: absolute;
-  right: 25%;
-  top: 15%;
-  opacity: 0.9;
-`;
-
 const Links = styled.span`
   margin: 1.5em;
   color: #d6a156;
@@ -35,15 +27,30 @@ const Links = styled.span`
 
 const ThreeLinks = styled.div`
   margin-top: .5%;
-  margin-left: 15%;
+  margin-left: 12%;
 `;
 
-const Pipe1 = styled.img`
+const MailBox = styled.img`
   float: left;
   position: absolute;
+  right: 25%;
+  top: 15%;
+  opacity: 0.9;
+`;
+
+const Pipe1 = MailBox.extend`
   right: 28%;
-  top: 1%;
+  top: 2%;
   height: 40%;
+`;
+
+const SearchIcon = MailBox.extend`
+  right: 20%;
+  top: 13%;
+`;
+
+const Pipe2 = Pipe1.extend`
+  right: 16%;
 `;
 
 class HeaderBar extends Component {
@@ -52,7 +59,9 @@ class HeaderBar extends Component {
       <NavBar>
           <Logo alt="Earn.com" src="https://static.earn.com/img/icons/wordmark-square-gold.svg" />
           <Pipe1 src="https://res.cloudinary.com/pancake/image/upload/v1510368906/Pipe.png" />
+          <Pipe2 src="https://res.cloudinary.com/pancake/image/upload/v1510368906/Pipe.png" />
           <MailBox alt="Messages" src="https://static.earn.com/img/icons/menu_icons/icon-nav-inbox-gold.svg" />
+          <SearchIcon alt="Search" src="https://static.earn.com/img/icons/menu_icons/icon-nav-search-gold.svg" />
           <ThreeLinks>
             <Links>Business</Links>
             <Links>Lists</Links>
