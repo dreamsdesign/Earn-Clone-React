@@ -6,6 +6,9 @@ const NavBar = styled.nav`
   justify-content: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.09);
   padding: 1.5%;
+  width: 98%;
+  position: fixed;
+  background-color: white;
 `;
 
 const Logo = styled.img`
@@ -123,7 +126,7 @@ class HeaderBar extends Component {
           </DropDownContent>
           <AmtBtc>
             0.0000
-            <img src="https://static.earn.com/img/icons/icon-bitcoin-gold-small.svg" />
+            <img src="https://static.earn.com/img/icons/icon-bitcoin-gold-small.svg" alt="bitcoin"/>
           </AmtBtc>
           <AmtUsd>
             $0.00
