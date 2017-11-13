@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import { Title } from './profile';
 
 const Border = styled.div`
+  background: #fff;
   box-shadow: 0 6px 18px 0 rgba(0,0,0,0.12);
   width: 670px;
   padding: 20px 40px;
+  border-radius: 4px;
 `;
 
 const EditIcon = styled.img`
