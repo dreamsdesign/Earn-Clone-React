@@ -4,6 +4,7 @@ import './App.css';
 import styled from 'styled-components';
 import HeaderBar from './components/header_bar';
 import Profile from './components/profile';
+import AboutYou from './components/about_you';
 
 const NavBar = styled.nav`
   position: fixed;
@@ -27,10 +28,9 @@ const Sections = styled.section`
   color: #404040;
   line-height: 1.42857143;
   letter-spacing: 1px;
-  overflow: auto;
-  overflow-y: scroll;
   padding-top: 1px;
   margin-top: -1px;
+  overflow-y: scroll;
 `
 
 class App extends Component {
@@ -42,6 +42,9 @@ class App extends Component {
         </NavBar>
         <Sections>
           <Profile />
+        </Sections>
+        <Sections>
+          <AboutYou />
         </Sections>
       </div>
     );
