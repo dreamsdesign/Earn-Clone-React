@@ -19,6 +19,10 @@ const AboutText = styled.div`
 `;
 
 class AboutYou extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div>

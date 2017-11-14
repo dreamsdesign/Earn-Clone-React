@@ -108,6 +108,10 @@ const DropDownContent = styled.div`
 `;
 
 class HeaderBar extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <NavBar>

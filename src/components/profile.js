@@ -97,6 +97,10 @@ const EditCompanyText = EditTitleText.extend`
 `;
 
 class Profile extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div>
@@ -104,9 +108,7 @@ class Profile extends Component {
         <ProfileBorder>
           <ProfileHead>
             <ProfileImg src="https://s3.amazonaws.com/userimages.21.co/14519669_10104818670757003_6339984358298392224_n.jpg" alt="Joe Fiume" />
-            <EditImg>
-              Upload New Image
-            </EditImg>
+            <EditImg>Upload New Image</EditImg>
             <ProfileInfo>
               <EditName>
                 <EditIcon src="https://static.earn.com/img/icons/icon-edit.svg" alt="Edit" title="Edit" />
@@ -121,8 +123,8 @@ class Profile extends Component {
                 <EditCompanyText>Edit your company url</EditCompanyText>
               </EditCompany>
             </ProfileInfo>
-        </ProfileHead>
-      </ProfileBorder>
+          </ProfileHead>
+        </ProfileBorder>
       </div>
     )
   }
