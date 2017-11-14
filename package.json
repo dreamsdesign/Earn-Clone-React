@@ -6,6 +6,7 @@
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-scripts": "1.0.17",
+    "react-toggle": "^4.0.2",
     "react-toggle-switch": "^3.0.3",
     "styled-components": "^2.2.3"
   },
