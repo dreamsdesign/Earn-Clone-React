@@ -6,6 +6,7 @@ import HeaderBar from './components/header_bar';
 import Profile from './components/profile';
 import AboutYou from './components/about_you';
 import PublicProfile from './components/public_profile';
+import YourPrices from './components/your_prices';
 
 const NavBar = styled.nav`
   position: fixed;
@@ -49,6 +50,9 @@ class App extends Component {
         </Sections>
         <Sections>
           <PublicProfile />
+        </Sections>
+        <Sections>
+          <YourPrices />
         </Sections>
       </div>
     );

@@ -5,7 +5,7 @@ import Switch from 'react-toggle-switch';
 import Toggle from 'react-toggle';
 import "react-toggle/style.css" // for ES6 modules
 
-const Border = styled.div`
+export const Border = styled.div`
   box-shadow: 0 6px 18px 0 rgba(0,0,0,0.12);
   width: 670px;
   padding: 20px 40px;
@@ -39,6 +39,12 @@ const ToggleDiv = styled.div`
   float: right;
 `;
 
+const SubRowText = styled.p`
+  color: #858585;
+  margin: 0;
+  margin-top: 12px;
+`;
+
 
 class PublicProfile extends Component {
   constructor(props) {
@@ -70,6 +76,20 @@ class PublicProfile extends Component {
               <Toggle onChange={this.toggleSwitch} icons={false}/>
             </ToggleDiv>
             <RowText>Accept paid messages</RowText>
+          </Rows>
+          <Rows>
+            <ToggleDiv>
+              <Toggle onChange={this.toggleSwitch} icons={false}/>
+            </ToggleDiv>
+            <RowText>Professional biography</RowText>
+            <SubRowText>Allow Earn.com to professionally enhance your image, title, and bio.</SubRowText>
+          </Rows>
+          <Rows>
+            <ToggleDiv>
+              <Toggle onChange={this.toggleSwitch} icons={false}/>
+            </ToggleDiv>
+            <RowText>Join lists</RowText>
+            <SubRowText>Allow Earn.com to add you to lists of similar users. This will help increase the number of paid messages you receive.</SubRowText>
           </Rows>
         </Border>
       </div>
