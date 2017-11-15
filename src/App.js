@@ -32,7 +32,6 @@ const Sections = styled.section`
   letter-spacing: 1px;
   padding-top: 1px;
   margin-top: -1px;
-  overflow-y: scroll;
 `
 
 class App extends Component {
