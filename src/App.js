@@ -7,12 +7,24 @@ import Profile from './components/profile';
 import AboutYou from './components/about_you';
 import PublicProfile from './components/public_profile';
 import YourPrices from './components/your_prices';
+import MenuBox from './components/menu_box';
 
 const NavBar = styled.nav`
   position: fixed;
   z-index: 2;
   background-color: white;
   opacity: 1;
+`;
+
+const LinksBox = styled.div`
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  opacity: 1;
+  float: left;
+  top: 120px;
+  left: 200px;
+  background-color: #FAFAFA;
 `;
 
 const Sections = styled.section`
@@ -41,6 +53,9 @@ class App extends Component {
         <NavBar>
           <HeaderBar />
         </NavBar>
+        <LinksBox>
+          <MenuBox />
+        </LinksBox>
         <Sections>
           <Profile />
         </Sections>
