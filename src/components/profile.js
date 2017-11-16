@@ -13,12 +13,6 @@ const ProfileBorder = Border.extend`
   width: 750px;
 `;
 
-const ProfileHead = styled.div`
-  display: table;
-  width: 100%;
-  height: 100px;
-`;
-
 const ProfileImg = styled.img`
   width: 238px;
   height: 238px;
