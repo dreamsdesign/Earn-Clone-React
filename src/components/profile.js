@@ -1,23 +1,17 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-
-const ProfileBorder = styled.div`
-  vertical-align: top;
-  position: relative;
-  display: table;
-  table-layout: fixed;
-  top: 0px;
-  left: 0px;
-  box-shadow: 0 6px 18px 0 rgba(0,0,0,0.12);
-  width: 750px;
-  height: 100px;
-  padding: 0px;
-`;
+import { Border } from './public_profile';
 
 export const Title = styled.h3`
   font-size: 16px;
   color: #858585;
 `
+
+const ProfileBorder = Border.extend`
+  padding: 0px;
+  height: 238px;
+  width: 750px;
+`;
 
 const ProfileHead = styled.div`
   display: table;
@@ -52,11 +46,9 @@ export const EditIcon = styled.img`
 `;
 
 const ProfileInfo = styled.div`
-  vertical-align: top;
   position: relative;
-  display: table-cell;
-  top: 30px;
-  left: -100px;
+  top: -250px;
+  left: 300px;
 `;
 
 const FullName = styled.h1`
@@ -75,6 +67,7 @@ const FullName = styled.h1`
 
 const EditName = styled.div`
   display: block;
+  position: relative;
 `;
 
 const EditTitle = styled.div`
@@ -103,7 +96,6 @@ class Profile extends Component {
       <div>
         <Title>Profile</Title>
         <ProfileBorder>
-          <ProfileHead>
             <ProfileImg src="https://s3.amazonaws.com/userimages.21.co/14519669_10104818670757003_6339984358298392224_n.jpg" alt="Joe Fiume" />
             <EditImg>Upload New Image</EditImg>
             <ProfileInfo>
@@ -120,7 +112,6 @@ class Profile extends Component {
                 <EditCompanyText>Edit your company url</EditCompanyText>
               </EditCompany>
             </ProfileInfo>
-          </ProfileHead>
         </ProfileBorder>
       </div>
     )
