@@ -97,9 +97,6 @@ const EditCompanyText = EditTitleText.extend`
 `;
 
 class Profile extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (

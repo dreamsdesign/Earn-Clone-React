@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Title } from './profile';
-import Switch from 'react-toggle-switch';
 import Toggle from 'react-toggle';
 import "react-toggle/style.css" // for ES6 modules
 
