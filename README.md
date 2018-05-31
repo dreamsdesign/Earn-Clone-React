@@ -1,1 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+- I created a front end clone of the website Earn.com
+- I used styled-components https://github.com/styled-components/styled-components
+- I recreated the profile page (found by going to earn.com/YOUR_USERNAME)
+- I only built the first 4 (Down to 'your prices')
